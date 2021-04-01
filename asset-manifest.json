@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/buzztara_app/static/css/main.1f14e227.chunk.css",
-    "main.js": "/buzztara_app/static/js/main.a06db4a7.chunk.js",
-    "main.js.map": "/buzztara_app/static/js/main.a06db4a7.chunk.js.map",
+    "main.css": "/buzztara_app/static/css/main.8f3a0784.chunk.css",
+    "main.js": "/buzztara_app/static/js/main.572161c1.chunk.js",
+    "main.js.map": "/buzztara_app/static/js/main.572161c1.chunk.js.map",
     "runtime-main.js": "/buzztara_app/static/js/runtime-main.f689841f.js",
     "runtime-main.js.map": "/buzztara_app/static/js/runtime-main.f689841f.js.map",
     "static/js/2.2baccbd1.chunk.js": "/buzztara_app/static/js/2.2baccbd1.chunk.js",
     "static/js/2.2baccbd1.chunk.js.map": "/buzztara_app/static/js/2.2baccbd1.chunk.js.map",
     "index.html": "/buzztara_app/index.html",
-    "static/css/main.1f14e227.chunk.css.map": "/buzztara_app/static/css/main.1f14e227.chunk.css.map",
+    "static/css/main.8f3a0784.chunk.css.map": "/buzztara_app/static/css/main.8f3a0784.chunk.css.map",
     "static/js/2.2baccbd1.chunk.js.LICENSE.txt": "/buzztara_app/static/js/2.2baccbd1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f689841f.js",
     "static/js/2.2baccbd1.chunk.js",
-    "static/css/main.1f14e227.chunk.css",
-    "static/js/main.a06db4a7.chunk.js"
+    "static/css/main.8f3a0784.chunk.css",
+    "static/js/main.572161c1.chunk.js"
   ]
 }
