@@ -7,6 +7,7 @@ import validator from 'validator';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import "../index.css";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
     password : {
@@ -194,8 +195,8 @@ const Form = ()=>{
           </Grid>
      </Grid>
 
-    <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus} onClick={event =>  window.location.href='/logged'}>
-     create account
+    <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus}>
+    <Link to="/logged" style={{color:"white",textDecoration:"none"}}>create account</Link> 
     </Button><br></br>
     <Button variant="outlined" color="primary" className={classes.signupbtn} startIcon={<VpnKeyIcon></VpnKeyIcon>}>
     Sign up with Google

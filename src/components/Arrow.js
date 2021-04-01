@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 
 const useStyles = makeStyles({
@@ -17,7 +17,7 @@ const Arrow=()=>{
     return(
         <>
         <Fab color="primary" size="small" className={classes.arrow}>
-        <ArrowBackIcon onClick={event =>  window.location.href='/signup'}/>
+        <Link to="/signup" style={{color:"white",textDecoration:"none"}}><ArrowBackIcon /></Link>
       </Fab>
         </>
     )
