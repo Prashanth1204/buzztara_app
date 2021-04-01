@@ -11,7 +11,7 @@ const Signup=()=>{
         <>
         <div style={{textAlign:"center"}}>
             <h4 className="logo">Buzztara</h4>
-            <Button variant="contained" size="large" color="primary"><Link to="/buzztara_app" style={{color:"white",textDecoration:"none"}}>sign up</Link></Button>
+            <Link to="/buzztara_app" style={{color:"white",textDecoration:"none"}}><Button variant="contained" size="large" color="primary">sign up</Button></Link>
         </div>
         </>
     )

@@ -124,12 +124,18 @@ const Form = ()=>{
     const [pswdstatus,setpswdstatus] = React.useState(true); 
     const [pswdtickstatus,setpswdtickstatus] = React.useState(true);
     const checkboxchanged = ()=>{
+        if(checked==true){
+            setchecked(false);
+        }
+        else{
+            setchecked(true);
+        }
         if(btnstatus==true&&tickstatus==false&&pswdstatus==true&&checked==false){
-        setchecked(true);
+        
         setbtnstatus(false);
         }
         else{
-        setchecked(false);
+        
         setbtnstatus(true);
         }
     }
@@ -195,9 +201,9 @@ const Form = ()=>{
           </Grid>
      </Grid>
 
-    <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus}>
-    <Link to="/logged" style={{color:"white",textDecoration:"none"}}>create account</Link> 
-    </Button><br></br>
+     <Link to="/logged" style={{color:"white",textDecoration:"none"}} disabled={btnstatus}><Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus}>
+    create account
+    </Button></Link> <br></br>
     <Button variant="outlined" color="primary" className={classes.signupbtn} startIcon={<VpnKeyIcon></VpnKeyIcon>}>
     Sign up with Google
     </Button>
