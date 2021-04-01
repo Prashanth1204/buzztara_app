@@ -194,7 +194,7 @@ const Form = ()=>{
           </Grid>
      </Grid>
 
-    <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus} onClick={event =>  window.location.href='/buzztara_app/logged'}>
+    <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus} onClick={event =>  window.location.href='/logged'}>
      create account
     </Button><br></br>
     <Button variant="outlined" color="primary" className={classes.signupbtn} startIcon={<VpnKeyIcon></VpnKeyIcon>}>

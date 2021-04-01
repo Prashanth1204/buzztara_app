@@ -8,9 +8,9 @@ function App() {
   return (
     
       <Switch>
-          <Route exact path="/buzztara_app" component={Main}/>
-          <Route exact path="/buzztara_app/logged" component={Loggedin} />
-          <Route exact path="/buzztara_app/signup" component={Signup} />
+          <Route exact path="/" component={Main}/>
+          <Route exact path="/logged" component={Loggedin} />
+          <Route exact path="/signup" component={Signup} />
       </Switch>
 
   );

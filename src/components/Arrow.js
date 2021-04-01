@@ -17,7 +17,7 @@ const Arrow=()=>{
     return(
         <>
         <Fab color="primary" size="small" className={classes.arrow}>
-        <ArrowBackIcon onClick={event =>  window.location.href='/buzztara_app/signup'}/>
+        <ArrowBackIcon onClick={event =>  window.location.href='/signup'}/>
       </Fab>
         </>
     )
