@@ -19,13 +19,13 @@ const useStyles = makeStyles({
         marginLeft : "2.7vw",
         marginTop : "10px",
         "@media (max-width:700px)":{
-            padding : "1.5vw 16vw",
+            padding : "1.7vw 16vw",
             borderRadius : "8px",
-            marginLeft : "2.7vw",
+            marginLeft : "1.2vw",
             marginTop : "10px",
         },
         "@media screen and (min-width:701px)":{
-            padding : "1vw 9vw",
+            padding : "1vw 9.1vw",
         }
     },
     signupbtn : {
@@ -34,13 +34,13 @@ const useStyles = makeStyles({
         marginLeft : "2.7vw",
         marginTop : "19px",
         "@media (max-width:700px)":{
-            padding : "1.5vw 10vw",
+            padding : "1.5vw 10.4vw",
             borderRadius : "8px",
-            marginLeft : "2.7vw",
-            marginTop : "19px",
+            marginLeft : "1.3vw",
+            marginTop : "17px",
         },
         "@media (min-width:701px)":{
-            padding : "1vw 8vw",
+            padding : "1vw 7.1vw",
         }
     },
     signup : {
@@ -123,21 +123,21 @@ const Form = ()=>{
     const [tickstatus,settickstatus] = React.useState(true);
     const [pswdstatus,setpswdstatus] = React.useState(true); 
     const [pswdtickstatus,setpswdtickstatus] = React.useState(true);
+    const [path,setpath] = React.useState("/buzztara_app");
+    const inputcheck=()=>{
+        
+        
+    }
     const checkboxchanged = ()=>{
         if(checked==true){
             setchecked(false);
+            setbtnstatus(true);
         }
         else{
             setchecked(true);
+            setbtnstatus(false);
         }
-        if(btnstatus==true&&tickstatus==false&&pswdstatus==true&&checked==false){
         
-        setbtnstatus(false);
-        }
-        else{
-        
-        setbtnstatus(true);
-        }
     }
     const eyefun=()=>{
         if(toggle=="text"){
@@ -154,12 +154,16 @@ const Form = ()=>{
     
     if (validator.isEmail(email)) {
         settickstatus(false);
-        if(checked&&pswdstatus==true){
-            setbtnstatus(false);
-        }
+        
     } else {
         settickstatus(true);
-        setbtnstatus(true);
+        
+    }
+    if(tickstatus==false && pswdstatus==true){
+        setpath("/logged");
+    }
+    else{
+        setpath("/buzztara_app");
     }
     }
     //password validation
@@ -169,13 +173,17 @@ const Form = ()=>{
     if (pwd.length<8) {
         setpswdstatus(false);
         setpswdtickstatus(true);
-        setbtnstatus(true);
+        
     } else {
         setpswdstatus(true);
         setpswdtickstatus(false);
-        if(checked&&tickstatus==false){
-            setbtnstatus(false);
-        }
+        
+    }
+    if(tickstatus==false && pwd.length>=8){
+        setpath("/logged");
+    }
+    else{
+        setpath("/buzztara_app");
     }
     }
     return (
@@ -201,8 +209,8 @@ const Form = ()=>{
           </Grid>
      </Grid>
 
-     <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus}>
-     <Link to="/logged" style={{color:"white",textDecoration:"none"}}>create account</Link>
+     <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus} onclick={inputcheck}>
+     <Link to={path} style={{color:"white",textDecoration:"none"}}>create account</Link>
     </Button> <br></br>
     <Button variant="outlined" color="primary" className={classes.signupbtn} startIcon={<VpnKeyIcon></VpnKeyIcon>}>
     Sign up with Google
