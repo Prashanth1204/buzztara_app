@@ -10,7 +10,7 @@ const Signup=()=>{
         <>
         <div style={{textAlign:"center"}}>
             <h4 className="logo">Buzztara</h4>
-            <Button variant="contained" size="large" color="primary" onClick={event =>  window.location.href='/'}>Sign up</Button>
+            <Button variant="contained" size="large" color="primary" onClick={event =>  window.location.href='/buzztara_app'}>Sign up</Button>
         </div>
         </>
     )
