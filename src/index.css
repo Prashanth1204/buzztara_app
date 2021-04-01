@@ -44,6 +44,7 @@
   }
 }
 
+
 @media screen and (min-width:1140px){
   .your_email{
     margin-left: -27vw;
@@ -77,6 +78,7 @@
     font-size: 20px;
     font-weight: 500;
     margin: 0;
+    margin-left: -47%;
   }
   input{
     margin: 3px;
@@ -95,7 +97,10 @@
   .login{
     font-size: 16px;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: -35px;
+  }
+  .form{
+    text-align: center;
   }
 }
 

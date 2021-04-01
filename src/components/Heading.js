@@ -10,7 +10,7 @@ const useStyles = makeStyles({
         "@media (max-width:701px)":{
             marginTop : "20px",
             marginBottom : "40px",
-            marginLeft : "10px",
+            textAlign : "center",
         },
         "@media (min-width:701px)":{
             textAlign : "center",

@@ -19,10 +19,11 @@ const useStyles = makeStyles({
         marginLeft : "2.7vw",
         marginTop : "10px",
         "@media (max-width:700px)":{
-            padding : "1.7vw 16vw",
+            padding : "1.7vw 17.8vw",
             borderRadius : "8px",
             marginLeft : "1.2vw",
             marginTop : "10px",
+            maxWidth : "300px",
         },
         "@media screen and (min-width:701px)":{
             padding : "1vw 9.1vw",
@@ -34,10 +35,11 @@ const useStyles = makeStyles({
         marginLeft : "2.7vw",
         marginTop : "19px",
         "@media (max-width:700px)":{
-            padding : "1.5vw 10.4vw",
+            padding : "1.5vw 10.2vw",
             borderRadius : "8px",
             marginLeft : "1.3vw",
             marginTop : "17px",
+            maxWidth : "300px",
         },
         "@media (min-width:701px)":{
             padding : "1vw 7.1vw",
@@ -49,7 +51,7 @@ const useStyles = makeStyles({
     checkbox : {
         marginLeft : "33%",
         "@media (max-width:700px)":{
-            marginLeft : "0",
+            marginLeft : "9.5%",
         },
         "@media (min-width:701px)":{
             marginLeft : "29%",
@@ -61,8 +63,8 @@ const useStyles = makeStyles({
     o : {
         marginLeft : "-33%",
         "@media (max-width:700px)":{
-            marginLeft : "0",
-            maxWidth : "56vw",
+            marginLeft : "-20px",
+            maxWidth : "66vw",
             marginTop : "-4px",
         },
         "@media (min-width:701px)":{
