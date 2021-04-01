@@ -159,7 +159,7 @@ const Form = ()=>{
         settickstatus(true);
         
     }
-    if(tickstatus==false && pswdstatus==true){
+    if(validator.isEmail(email) && pswdstatus==true){
         setpath("/logged");
     }
     else{
