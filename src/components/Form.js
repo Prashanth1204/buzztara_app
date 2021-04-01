@@ -154,16 +154,17 @@ const Form = ()=>{
     
     if (validator.isEmail(email)) {
         settickstatus(false);
+        if(pswdstatus==true){
+            setpath("/logged");
+        }
+        else{
+            setpath("/buzztara_app");
+        }
         
     } else {
         settickstatus(true);
-        
-    }
-    if(validator.isEmail(email) && pswdstatus==true){
-        setpath("/logged");
-    }
-    else{
         setpath("/buzztara_app");
+        
     }
     }
     //password validation
