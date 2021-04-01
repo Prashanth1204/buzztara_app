@@ -201,9 +201,9 @@ const Form = ()=>{
           </Grid>
      </Grid>
 
-     <Link to="/logged" style={{color:"white",textDecoration:"none"}} disabled={btnstatus}><Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus}>
-    create account
-    </Button></Link> <br></br>
+     <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus}>
+     <Link to="/logged" style={{color:"white",textDecoration:"none"}}>create account</Link>
+    </Button> <br></br>
     <Button variant="outlined" color="primary" className={classes.signupbtn} startIcon={<VpnKeyIcon></VpnKeyIcon>}>
     Sign up with Google
     </Button>
