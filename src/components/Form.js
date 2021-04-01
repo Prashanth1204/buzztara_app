@@ -125,9 +125,21 @@ const Form = ()=>{
     const [tickstatus,settickstatus] = React.useState(true);
     const [pswdstatus,setpswdstatus] = React.useState(true); 
     const [pswdtickstatus,setpswdtickstatus] = React.useState(true);
+    const [mailerror,setmailerror] = React.useState(true);
     const [path,setpath] = React.useState("/buzztara_app");
     const inputcheck=()=>{
-        
+        if(pswdtickstatus==true){
+            setpswdstatus(false);
+        }
+        else{
+            setpswdstatus(true);
+        }
+        if(tickstatus==true){
+            setmailerror(false);
+        }
+        else{
+            setmailerror(true);
+        }
         
     }
     const checkboxchanged = ()=>{
@@ -174,11 +186,11 @@ const Form = ()=>{
     var pwd = e.target.value
     
     if (pwd.length<8) {
-        setpswdstatus(false);
+       // setpswdstatus(false);
         setpswdtickstatus(true);
         
     } else {
-        setpswdstatus(true);
+       // setpswdstatus(true);
         setpswdtickstatus(false);
         
     }
@@ -194,6 +206,7 @@ const Form = ()=>{
      <div className="form">
      <h6 className="your_email">Your Email</h6>
      <input type="text" className="email" onChange={(e) => validateEmail(e)}></input><span hidden={tickstatus} className={classes.tick}>&#10003;</span>
+     <div><small hidden={mailerror} className={classes.password_feed}>*Enter valid mail</small></div>
      <h6 className="your_email">Password</h6>
      <input type={toggle} className="password" onChange={(e) => validatePassword(e)}></input><VisibilityIcon className={classes.eyeopen} onClick={eyefun}/> <span hidden={pswdtickstatus} className={classes.pswdtick}>&#10003;</span>
      <div><small hidden={pswdstatus} className={classes.password_feed}>*Password must be atleast 8 characters</small></div>
@@ -212,8 +225,8 @@ const Form = ()=>{
           </Grid>
      </Grid>
 
-     <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus} onclick={inputcheck}>
-     <Link to={path} style={{color:"white",textDecoration:"none"}}>create account</Link>
+     <Button variant="contained" color="primary" className={classes.btn} disabled={btnstatus} onClick={inputcheck}>
+     <Link to={path} style={{color:"white",textDecoration:"none"}} onClick={inputcheck}>create account</Link>
     </Button> <br></br>
     <Button variant="outlined" color="primary" className={classes.signupbtn} startIcon={<VpnKeyIcon></VpnKeyIcon>}>
     Sign up with Google
