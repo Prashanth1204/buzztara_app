@@ -5,7 +5,7 @@ import Arrow from "./Arrow";
 
 function Main() {
   return (
-    <div className="App">
+    <div>
       <Arrow></Arrow>
       <Heading></Heading>
       <Form></Form>
