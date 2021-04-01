@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/buzztara_app/static/css/main.460ff484.chunk.css",
-    "main.js": "/buzztara_app/static/js/main.7378f21e.chunk.js",
-    "main.js.map": "/buzztara_app/static/js/main.7378f21e.chunk.js.map",
+    "main.js": "/buzztara_app/static/js/main.45273811.chunk.js",
+    "main.js.map": "/buzztara_app/static/js/main.45273811.chunk.js.map",
     "runtime-main.js": "/buzztara_app/static/js/runtime-main.f689841f.js",
     "runtime-main.js.map": "/buzztara_app/static/js/runtime-main.f689841f.js.map",
     "static/js/2.9467fec2.chunk.js": "/buzztara_app/static/js/2.9467fec2.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.f689841f.js",
     "static/js/2.9467fec2.chunk.js",
     "static/css/main.460ff484.chunk.css",
-    "static/js/main.7378f21e.chunk.js"
+    "static/js/main.45273811.chunk.js"
   ]
 }
